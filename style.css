@@ -64,6 +64,7 @@ a {
 #About > a {
   padding-bottom: 20px;
   margin-top: 20px;
+
 }
 
 .initial-scale {
@@ -72,7 +73,14 @@ a {
   display: none;
   position: absolute;
   background-color: white;
+
 }
+
+.initial-scale > li:hover,
+.link-menu > li:hover {
+  background-color: rgb(184, 175, 175);
+}
+
 .link-menu {
   display: none;
   position: absolute;
@@ -84,12 +92,6 @@ a {
 }
 .btn-remov {
   display: none;
-}
-li#Links:hover .link-menu {
-  display: block;
-}
-li#About:hover .initial-scale {
-  display: block;
 }
 
 @media screen and (min-width: 1000px) {
@@ -141,10 +143,6 @@ li#About:hover .initial-scale {
     right: 0;
     background-color: white;
   }
-  .link-menu {
-    top: 0;
-    border: 0;
-  }
   .displayClass > ul {
     display: block;
     width: 80%;
@@ -161,5 +159,11 @@ li#About:hover .initial-scale {
   .displayUl .myTop {
     transform: rotateZ(-90deg);
     margin-bottom: 10px;
+  }
+  .link-menu {
+    margin-left: -20px;
+    padding-left: 20px;
+    top: 0;
+    border: 0;
   }
 }
