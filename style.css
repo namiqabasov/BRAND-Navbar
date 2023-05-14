@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  width: 100%;
+  height: 96px;
+}
+a {
+  display: flex;
+  justify-content: space-between;
+}
+.myBrand > h1 {
+  color: rgb(0, 81, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+}
+
+.myBottom {
+  transform: rotateZ(90deg);
+  margin-left: 10px;
+}
+.Select-ulTag > ul {
+  font-size: 16px;
+  transition: 1s;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.myBtn {
+  display: none;
+}
+#Links #About {
+  position: relative;
+}
+
+#About > a {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.initial-scale {
+  width: 200px;
+  border-top: 3px solid rgb(0, 81, 255);
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+.link-menu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  border-top: 3px solid rgb(0, 81, 255);
+  left: 200px;
+  top: 65px;
+  background-color: white;
+}
+.btn-remov {
+  display: none;
+}
+li#Links:hover .link-menu {
+  display: block;
+}
+li#About:hover .initial-scale {
+  display: block;
+}
+
+@media screen and (min-width: 1000px) {
+  li.Links:hover .link-menu {
+    display: block;
+  }
+  li.About:hover .initial-scale {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    justify-content: space-around;
+  }
+  .Select-ulTag {
+    display: none;
+    position: relative;
+  }
+  .btn-remov {
+    display: block;
+  }
+  .Select-ulTag > button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+  }
+
+  .myBtn {
+    display: block;
+  }
+  .myBtn > button {
+    border: 0;
+    background: 0;
+    font-size: 40px;
+    color: rgb(0, 81, 255);
+  }
+  a {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .displayClass {
+    display: block;
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    background-color: white;
+  }
+  .link-menu {
+    top: 0;
+    border: 0;
+  }
+  .displayClass > ul {
+    display: block;
+    width: 80%;
+    height: auto;
+    height: auto;
+  }
+
+  .displayUl {
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid rgb(0, 81, 255);
+    left: 20px;
+  }
+  .displayUl .myTop {
+    transform: rotateZ(-90deg);
+    margin-bottom: 10px;
+  }
+}
