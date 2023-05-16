@@ -21,7 +21,8 @@ ul {
   max-width: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 nav {
   display: flex;
@@ -46,10 +47,13 @@ a {
   transform: rotateZ(90deg);
   margin-left: 10px;
 }
+.Select-ulTag{
+  background-color: aliceblue;
+}
 .Select-ulTag > ul {
   font-size: 16px;
   transition: 1s;
-
+  background-color: aliceblue;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -57,15 +61,7 @@ a {
 .myBtn {
   display: none;
 }
-#Links #About {
-  position: relative;
-}
 
-#About > a {
-  padding-bottom: 20px;
-  margin-top: 20px;
-
-}
 
 .initial-scale {
   width: 200px;
@@ -73,7 +69,6 @@ a {
   display: none;
   position: absolute;
   background-color: white;
-
 }
 
 .initial-scale > li:hover,
@@ -91,7 +86,16 @@ a {
   background-color: white;
 }
 .btn-remov {
+  border: 0;
+  background: none;
   display: none;
+}
+
+.divimg{
+  width: 100%;
+}
+img{
+  width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -132,22 +136,21 @@ a {
   }
   a {
     padding: 10px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .displayClass {
     display: block;
-    width: 80%;
-    height: 100px;
+    width: 65%;
     position: fixed;
+    height: 1000px;
     right: 0;
+    top: 0;
     background-color: white;
   }
   .displayClass > ul {
     display: block;
-    width: 80%;
-    height: auto;
-    height: auto;
+    width: 65%;
   }
 
   .displayUl {
@@ -156,7 +159,7 @@ a {
     border-bottom: 3px solid rgb(0, 81, 255);
     left: 20px;
   }
-  .displayUl .myTop {
+  .myTop {
     transform: rotateZ(-90deg);
     margin-bottom: 10px;
   }
